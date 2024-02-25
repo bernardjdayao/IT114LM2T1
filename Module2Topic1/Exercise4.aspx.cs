@@ -13,5 +13,16 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                result.Text = $"Email: {email.Text}" +
+                    $"Age: {age.Text}" +
+                    $"Full Name: {fullName.Text}";
+            }
+        }
     }
+   
 }
